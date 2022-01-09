@@ -401,12 +401,6 @@ body {
   color: rgba(157, 164, 189, 0.6);
 }
 
-@media screen and (max-width: 479px) {
-  .service__pre-title {
-    font-size: 8px;
-  }
-}
-
 .service__pre-title::before {
   background-color: var(--second-text-color);
 }
@@ -432,7 +426,7 @@ body {
 
 @media screen and (max-width: 479px) {
   .prices__text {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -445,7 +439,7 @@ body {
 
 @media screen and (max-width: 479px) {
   .prices__span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -614,12 +608,6 @@ body {
   margin: 32px;
 }
 
-@media screen and (max-width: 479px) {
-  .masters__pre-title {
-    font-size: 8px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -635,12 +623,6 @@ body {
 
 .gallery__pre-title {
   margin-bottom: 44px;
-}
-
-@media screen and (max-width: 479px) {
-  .gallery__pre-title {
-    font-size: 8px;
-  }
 }
 
 .gallery__list {

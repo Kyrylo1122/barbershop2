@@ -437,6 +437,12 @@ body {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .reason__title {
+    font-size: 30px;
+  }
+}
+
 .reason__post-title {
   font-size: 18px;
   line-height: 1.67;
@@ -627,6 +633,12 @@ body {
   text-align: center;
   color: var(--title-white-color);
   margin-bottom: 44px;
+}
+
+@media screen and (max-width: 479px) {
+  .booking__title {
+    font-size: 32px;
+  }
 }
 
 .booking__input {

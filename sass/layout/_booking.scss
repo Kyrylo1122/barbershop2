@@ -4,6 +4,9 @@
     text-align: center;
     color: var(--title-white-color);
     margin-bottom: 44px;
+    @media screen and (max-width: 479px) {
+      font-size: 32px;
+    }
   }
   &__input {
     margin-bottom: 44px;

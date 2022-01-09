@@ -1,8 +1,16 @@
-.reason__post-title {
-  font-size: 18px;
-  line-height: 1.67;
-  margin-bottom: 44px;
-  @media screen and (max-width: 479px) {
-    font-size: 12px;
+.reason {
+  &__title {
+    @media screen and (max-width: 479px) {
+      font-size: 30px;
+    }
+  }
+
+  &__post-title {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 44px;
+    @media screen and (max-width: 479px) {
+      font-size: 12px;
+    }
   }
 }

@@ -28,7 +28,7 @@ li {
 }
 
 a {
-  text-decoration: 0;
+  text-decoration: none;
 }
 
 img {
@@ -194,7 +194,8 @@ button {
 }
 
 .modal {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   padding: 48px 50px;
   width: 75%;
@@ -202,6 +203,10 @@ button {
   background-color: var(--backgrround-white-color);
   transform: translateX(100%);
   transition: transform 300ms linear;
+}
+
+.modal-bottom {
+  margin-top: auto;
 }
 
 .backdrop.is-open .modal {
@@ -318,6 +323,13 @@ button {
   color: var(--btn--black-text-colo);
   border-color: var(--accent-color);
   background-color: transparent;
+}
+
+@media screen and (max-width: 479px) {
+  .btn {
+    padding: 10px 25px;
+    font-size: 10px;
+  }
 }
 
 body {
@@ -509,14 +521,15 @@ body {
 }
 
 .reason-set__container {
-  padding: 20px 0;
+  padding: 20px 30px;
   max-width: 193px;
+  min-height: 72px;
   background-color: #f7f7f7;
 }
 
 @media screen and (max-width: 479px) {
   .reason-set__container {
-    padding: 20px 0;
+    padding: 10px 10px;
     width: 100%;
   }
 }

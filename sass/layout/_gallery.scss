@@ -1,0 +1,13 @@
+.gallery {
+  &__pre-title {
+    margin-bottom: 44px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: -15px;
+  }
+  &__item {
+    margin: 15px;
+  }
+}

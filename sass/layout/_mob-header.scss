@@ -1,0 +1,17 @@
+.mob-header {
+  display: flex;
+  padding-top: 40px;
+  background-color: transparent;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.mob-header-container {
+  position: relative;
+}
+.mob-menu {
+  margin-left: auto;
+  fill: #fff;
+}

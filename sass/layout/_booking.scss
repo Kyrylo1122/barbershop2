@@ -1,0 +1,39 @@
+.booking {
+  background-color: #191c26;
+  &__title {
+    text-align: center;
+    color: var(--title-white-color);
+    margin-bottom: 44px;
+  }
+  &__input {
+    margin-bottom: 44px;
+
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    color: #fff;
+    outline: none;
+  }
+  &__textarea {
+    resize: none;
+
+    min-height: 76px;
+  }
+  &__btn {
+    color: var(--btn--white-text-color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.booking__input::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+}

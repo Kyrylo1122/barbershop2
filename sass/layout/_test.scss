@@ -1,0 +1,11 @@
+.log {
+  border: 2px solid blueviolet;
+  background-color: coral;
+  padding: 30px 15px;
+  transform: translateX(100px);
+  transition: background-color 1000ms linear, transform 1000ms linear;
+}
+.log:hover {
+  background-color: cyan;
+  transform: translateX(0);
+}

@@ -12,6 +12,7 @@
 
   text-align: center;
   &__item {
+    width: calc((100% / 2) - 30px);
     margin: 15px;
     @media screen and (max-width: 479px) {
       margin: 10px;
@@ -44,10 +45,11 @@
     }
   }
   &__container {
-    padding: 20px 32px;
+    padding: 20px 0;
     max-width: 193px;
+
     @media screen and (max-width: 479px) {
-      padding: 10px 4px;
+      padding: 20px 0;
       max-width: 134px;
     }
 

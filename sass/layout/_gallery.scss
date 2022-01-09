@@ -1,6 +1,9 @@
 .gallery {
   &__pre-title {
     margin-bottom: 44px;
+    @media screen and (max-width: 479px) {
+      font-size: 8px;
+    }
   }
   &__list {
     display: flex;

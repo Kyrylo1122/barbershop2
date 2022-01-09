@@ -68,12 +68,6 @@ button {
   align-items: center;
 }
 
-@media screen and (max-width: 479px) {
-  .pre-title {
-    font-size: 8px;
-  }
-}
-
 .pre-title::before {
   content: "";
   margin-right: 20px;
@@ -103,12 +97,6 @@ button {
   line-height: 1.62;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
-}
-
-@media screen and (max-width: 479px) {
-  .post-title {
-    font-size: 10px;
-  }
 }
 
 .hero {
@@ -148,6 +136,7 @@ button {
 .hero__title {
   color: var(--title-white-color);
   margin-bottom: 20px;
+  font-size: 42px;
 }
 
 .hero__post-title {
@@ -412,6 +401,12 @@ body {
   color: rgba(157, 164, 189, 0.6);
 }
 
+@media screen and (max-width: 479px) {
+  .service__pre-title {
+    font-size: 8px;
+  }
+}
+
 .service__pre-title::before {
   background-color: var(--second-text-color);
 }
@@ -582,19 +577,6 @@ body {
   fill: var(--accent-color);
 }
 
-.masters__title {
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  margin-bottom: 44px;
-}
-
-@media screen and (max-width: 479px) {
-  .masters__title {
-    font-size: 28px;
-  }
-}
-
 .card-description {
   text-align: center;
 }
@@ -609,6 +591,19 @@ body {
   color: var(--accent-color);
 }
 
+.masters__title {
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+}
+
+@media screen and (max-width: 479px) {
+  .masters__title {
+    font-size: 28px;
+  }
+}
+
 .masters__list {
   display: flex;
   flex-direction: column;
@@ -617,6 +612,12 @@ body {
 
 .masters__item {
   margin: 32px;
+}
+
+@media screen and (max-width: 479px) {
+  .masters__pre-title {
+    font-size: 8px;
+  }
 }
 
 .visually-hidden {
@@ -634,6 +635,12 @@ body {
 
 .gallery__pre-title {
   margin-bottom: 44px;
+}
+
+@media screen and (max-width: 479px) {
+  .gallery__pre-title {
+    font-size: 8px;
+  }
 }
 
 .gallery__list {

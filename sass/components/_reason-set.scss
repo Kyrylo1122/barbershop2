@@ -13,6 +13,7 @@
   text-align: center;
   &__item {
     width: calc((100% / 2) - 30px);
+    min-height: 133px;
     margin: 15px;
     @media screen and (max-width: 479px) {
       margin: 10px;
@@ -40,9 +41,6 @@
     line-height: 1.36;
     text-align: center;
     color: var(--third-text-color);
-    @media screen and (max-width: 479px) {
-      font-size: 8px;
-    }
   }
   &__container {
     padding: 20px 0;
@@ -50,7 +48,7 @@
 
     @media screen and (max-width: 479px) {
       padding: 20px 0;
-      max-width: 134px;
+      width: 100%;
     }
 
     background-color: #f7f7f7;

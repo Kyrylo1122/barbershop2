@@ -465,6 +465,7 @@ body {
 
 .reason-set__item {
   width: calc((100% / 2) - 30px);
+  min-height: 133px;
   margin: 15px;
 }
 
@@ -501,12 +502,6 @@ body {
   color: var(--third-text-color);
 }
 
-@media screen and (max-width: 479px) {
-  .reason-set__text {
-    font-size: 8px;
-  }
-}
-
 .reason-set__container {
   padding: 20px 0;
   max-width: 193px;
@@ -516,7 +511,7 @@ body {
 @media screen and (max-width: 479px) {
   .reason-set__container {
     padding: 20px 0;
-    max-width: 134px;
+    width: 100%;
   }
 }
 

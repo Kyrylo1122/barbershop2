@@ -1,16 +1,10 @@
 .hero {
-  height: 580px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 208px;
-  padding-bottom: 183px;
-  margin-left: auto;
-  margin-right: auto;
   @media screen and (max-width: 767px) {
+    height: 580px;
+    width: 100%;
+    background-size: cover;
     background-image: url(../img/hero/mob/hero.mob-min.jpg);
-    max-width: 580px;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -18,7 +12,83 @@
     }
   }
   &__container {
-    width: 306px;
+    display: flex;
+  }
+  &__left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 65px;
+    margin-right: 40px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &-social {
+    display: flex;
+    align-items: center;
+
+    transform: rotate(-90deg) translateX(50%);
+    &::before {
+      content: "";
+      width: 60px;
+      height: 1px;
+      margin-right: 40px;
+      background-color: var(--third-text-color);
+    }
+    &__item:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &__link {
+      padding: 45px 0;
+
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 15px;
+      color: var(--third-text-color);
+
+      letter-spacing: 0.2em;
+      &:focus,
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+  &__right {
+    height: 680px;
+    width: 576px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 1199px) {
+      background-image: url(../img/hero/tablet/tablet.bg-min.jpg);
+      padding-top: 280px;
+      padding-bottom: 234px;
+      padding-left: 70px;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/hero/tablet/tablet.bg@2x-min.jpg);
+      }
+    }
+    @media screen and (max-width: 767px) {
+      background-image: none;
+      padding-top: 208px;
+      padding-bottom: 183px;
+      padding-left: 70px;
+    }
+  }
+  &__content {
+    @media screen and (max-width: 1199px) {
+      width: 349px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 306px;
+    }
   }
   &__pre-title {
     color: var(--pre-title-first-color);

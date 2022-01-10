@@ -1,5 +1,5 @@
 .btn {
-  padding: 12px 37px;
+  padding: 12px 20px;
   border-radius: 25px;
   font-family: Open Sans, sans-serif;
   font-style: normal;
@@ -8,9 +8,15 @@
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--btn--black-text-colo);
+
   border-color: var(--accent-color);
   background-color: transparent;
+  &:focus,
+  &:hover {
+    color: var(--btn--white-text-color);
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+  }
   @media screen and (max-width: 479px) {
     padding: 10px 25px;
     font-size: 10px;

@@ -20,7 +20,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="mob-header-container">
+        <div class="header__wrap">
+          <!-- header_MOB -->
+
           <div class="mob-header">
             <a href="" class="logo__link">
               <svg class="logo" width="69" height="56">
@@ -37,6 +39,51 @@
               </svg>
             </button>
           </div>
+
+          <!-- header_DESKTOP -->
+
+          <div class="header-container">
+            <a href="" class="header__logo">
+              <svg width="65" height="55">
+                <use href="icons.svg#icon-Logo"></use>
+              </svg>
+            </a>
+
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Услуги и цены</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Мастера</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="header-contacts">
+              <li class="header-contacts__item hidden">
+                <div class="">.</div>
+              </li>
+              <li class="header-contacts__item">
+                <button class="btn header__btn" type="button">
+                  онлайн-запись
+                </button>
+              </li>
+              <li class="header-contacts__item">
+                <a
+                  href="tel:+380441111111"
+                  class="header-contacts__link header-contacts__tel"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="backdrop js-menu-container">
@@ -50,28 +97,30 @@
 
             <ul class="modal-nav">
               <li class="modal-nav__item">
-                <a href="" class="modal-nav__link">О нас </a>
+                <a href="" class="modal-nav__link nav__link">О нас </a>
               </li>
               <li class="modal-nav__item">
-                <a href="" class="modal-nav__link">Услуги и цены</a>
+                <a href="" class="modal-nav__link nav__link">Услуги и цены</a>
               </li>
               <li class="modal-nav__item">
-                <a href="" class="modal-nav__link">Мастера</a>
+                <a href="" class="modal-nav__link nav__link">Мастера</a>
               </li>
               <li class="modal-nav__item">
-                <a href="" class="modal-nav__link">Контакты</a>
+                <a href="" class="modal-nav__link nav__link">Контакты</a>
               </li>
             </ul>
           </div>
           <div class="modal-bottom">
-            <ul class="mob-contacts">
+            <ul class="header-contacts">
               <li class="mob-contacts__item">
-                <a href="tel:+380441111111" class="mob-contacts__link"
+                <a
+                  href="tel:+380441111111"
+                  class="header-contacts__link mob-contacts__link"
                   >+38 044 111 11 11</a
                 >
               </li>
               <li class="mob-contacts__item">
-                <button class="btn">онлайн-запись</button>
+                <button class="btn modal__btn">онлайн-запись</button>
               </li>
             </ul>
             <ul class="mob-social">
@@ -94,14 +143,28 @@
       <section class="hero">
         <div class="container">
           <div class="hero__container">
-            <p class="pre-title hero__pre-title">
-              A hair salon for men in Kyiv
-            </p>
-            <h1 class="hero__title title">BarberShop</h1>
-            <p class="hero__post-title post-title">
-              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
-              и со вкусом.
-            </p>
+            <div class="hero__left">
+              <ul class="hero-social">
+                <li class="hero-social__item">
+                  <a href="" class="hero-social__link">Instagram</a>
+                </li>
+                <li class="hero-social__item">
+                  <a href="" class="hero-social__link">Youtube</a>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__right">
+              <div class="hero__content">
+                <p class="pre-title hero__pre-title">
+                  A hair salon for men in Kyiv
+                </p>
+                <h1 class="hero__title title">BarberShop</h1>
+                <p class="hero__post-title post-title">
+                  Мы эксперты в модных мужских стрижках. Работаем быстро,
+                  осторожно и со вкусом.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

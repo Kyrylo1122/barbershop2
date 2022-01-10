@@ -173,20 +173,56 @@
 
       <section class="section about">
         <div class="container">
-          <p class="pre-title">О НАС</p>
-          <h2 class="title about__title">Лучший Барбершоп твоего города</h2>
-          <p class="post-title about__post-title">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
-            к нам.
-          </p>
-          <p class="post-title about__text">
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <button type="button" class="btn about__btn">онлайн-запись</button>
+          <div class="about__wrap">
+            <div class="about-left">
+              <ul class="about-left__list">
+                <li class="about-left__item">
+                  <picture
+                    ><source
+                      srcset="
+                        ./img/about/tablet/tablet.about1-min.jpg    1x,
+                        ./img/about/tablet/tablet.about1@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <img
+                      src="./img/about/tablet/tablet.about1-min.jpg"
+                      alt="бреют голову "
+                  /></picture>
+                </li>
+                <li class="about-left__item">
+                  <picture
+                    ><source
+                      srcset="
+                        ./img/about/tablet/tablet.about2-min.jpg    1x,
+                        ./img/about/tablet/tablet.about2@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <img
+                      src="./img/about/tablet/tablet.about2-min.jpg"
+                      alt="бреют голову "
+                  /></picture>
+                </li>
+              </ul>
+            </div>
+            <div class="about-right">
+              <p class="pre-title">О НАС</p>
+              <h2 class="title about__title">Лучший Барбершоп твоего города</h2>
+              <p class="post-title about__post-title">
+                Если ты хочешь добавить в свой образ больше уверенности – тебе
+                точно к нам.
+              </p>
+              <p class="post-title about__text">
+                Мы команда, которая никогда не останавливается на достигнутом и
+                жаждет перемен. И когда ты попадешь в руки нашего мастера, то
+                уже никогда не сможешь быть прежним. Мы команда, которая всегда
+                с клиентами "на одной волне". Поэтому, мы всегда готовы
+                усовершенствовать каждого, кто к нам приходит!
+              </p>
+              <button type="button" class="btn about__btn">
+                онлайн-запись
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -198,42 +234,59 @@
             Проведи время в компании лучших мастеров
           </p>
           <h2 class="title service__title">Услуги и цены</h2>
-          <div class="prices-wrap">
-            <ul class="prices">
-              <li class="prices__item">
-                <p class="prices__text">Мужская стрижка</p>
-                <span class="prices__span">от 300 грн.</span>
+          <div class="service__wrap">
+            <ul class="service__list">
+              <li class="service__item">
+                <p class="service__text service__description">
+                  Мужская стрижка
+                </p>
+                <span class="service__span service__text">от 300 грн.</span>
               </li>
-              <li class="prices__item">
-                <p class="prices__text">Стрижка бороды</p>
-                <span class="prices__span">от 200 грн.</span>
+              <li class="service__item">
+                <p class="service__text service__description">Стрижка бороды</p>
+                <span class="service__span service__text">от 200 грн.</span>
               </li>
-              <li class="prices__item">
-                <p class="prices__text">Стрижка усов</p>
-                <span class="prices__span">от 200 грн.</span>
+              <li class="service__item">
+                <p class="service__text service__description">Стрижка усов</p>
+                <span class="service__span service__text">от 200 грн.</span>
               </li>
-              <li class="prices__item">
-                <p class="prices__text">Бритье опасной бритвой</p>
-                <span class="prices__span">от 200 грн.</span>
+              <li class="service__item">
+                <p class="service__text service__description">
+                  Бритье опасной бритвой
+                </p>
+                <span class="service__span service__text">от 200 грн.</span>
               </li>
 
-              <li class="prices__item">
-                <p class="prices__text">Cтрижка у стажера</p>
-                <span class="prices__span">от 50 грн.</span>
+              <li class="service__item">
+                <p class="service__text service__description">
+                  Cтрижка у стажера
+                </p>
+                <span class="service__span service__text">от 50 грн.</span>
               </li>
-              <li class="prices__item">
-                <p class="prices__text">Стрижка под насадку</p>
-                <span class="prices__span">от 200 грн.</span>
+              <li class="service__item">
+                <p class="service__text service__description">
+                  Стрижка под насадку
+                </p>
+                <span class="service__span service__text">от 200 грн.</span>
               </li>
-              <li class="prices__item">
-                <p class="prices__text">Детская стрижка (до 12 лет)</p>
-                <span class="prices__span">от 300 грн.</span>
+              <li class="service__item">
+                <p class="service__text service__description">
+                  Детская стрижка (до 12 лет)
+                </p>
+                <span class="service__span service__text">от 300 грн.</span>
               </li>
-              <li class="prices__item">
-                <p class="prices__text">Камуфлирование седины</p>
-                <span class="prices__span">от 200 грн.</span>
+              <li class="service__item">
+                <p class="service__text service__description">
+                  Камуфлирование седины
+                </p>
+                <span class="service__span service__text">от 200 грн.</span>
               </li>
             </ul>
+            <div class="cl">
+              <button type="button" class="btn service__btn">
+                онлайн-запись
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -242,12 +295,15 @@
 
       <section class="section reason">
         <div class="container">
-          <p class="pre-title">старая традиционная школа</p>
-          <h2 class="title reason__title">Почему приходят именно к нам?</h2>
-          <p class="post-title reason__post-title">
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
-          </p>
+          <div class="reason__container">
+            <p class="pre-title">старая традиционная школа</p>
+            <h2 class="title reason__title">Почему приходят именно к нам?</h2>
+            <p class="post-title reason__post-title">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и
+              прочувствовать, чем 10 раз прочитать.
+            </p>
+          </div>
+
           <div class="reason-set__wrap">
             <ul class="reason-set">
               <li class="reason-set__item">
@@ -282,7 +338,7 @@
       <!-- MASTERS -->
 
       <section class="masters">
-        <div class="container">
+        <div class="container masters__container">
           <p class="pre-title masters__pre-title">
             для настоящих ценителей атмосферы
           </p>
@@ -292,12 +348,23 @@
               <picture>
                 <source
                   srcset="
-                    ./img/masters/img1master1-min.jpg    1x,
-                    ./img/masters/img1master1@2x-min.jpg 2x
+                    ./img/masters/mob/img1master1-min.jpg    1x,
+                    ./img/masters/mob/img1master1@2x-min.jpg 2x
                   "
-                  media="(max-width:767 px)"
+                  media="(max-width:767px)"
                 />
-                <img src="./img/masters/img1master1-min.jpg" alt="master31" />
+                <source
+                  srcset="
+                    ./img/masters/tabl/img1tabl.masters-min.jpg    1x,
+                    ./img/masters/tabl/img1tabl.masters@2x-min.jpg 2x
+                  "
+                  media="(max-width:1199px)"
+                />
+
+                <img
+                  src="./img/masters/mob/img1master1-min.jpg"
+                  alt="master1"
+                />
               </picture>
               <div class="card-description">
                 <h3 class="card-description__title">John Smith</h3>
@@ -338,12 +405,23 @@
               <picture>
                 <source
                   srcset="
-                    ./img/masters/img2master2-min.jpg    1x,
-                    ./img/masters/img2master2@2x-min.jpg 2x
+                    ./img/masters/mob/img2master2-min.jpg    1x,
+                    ./img/masters/mob/img2master2@2x-min.jpg 2x
                   "
-                  media="(max-width:767 px)"
+                  media="(max-width:767px)"
                 />
-                <img src="./img/masters/img2master2-min.jpg" alt="master2" />
+                <source
+                  srcset="
+                    ./img/masters/tabl/img2tabl.masters2-min.jpg    1x,
+                    ./img/masters/tabl/img2tabl.masters2@2x-min.jpg 2x
+                  "
+                  media="(max-width:1199px)"
+                />
+
+                <img
+                  src="./img/masters/mob/img2master2-min.jpg"
+                  alt="master2"
+                />
               </picture>
               <div class="card-description">
                 <h3 class="card-description__title">John Smith</h3>
@@ -384,12 +462,24 @@
               <picture>
                 <source
                   srcset="
-                    ./img/masters/img3master3-min.jpg    1x,
-                    ./img/masters/img3master3@2x-min.jpg 2x
+                    ./img/masters/mob/img3master3-min.jpg    1x,
+                    ./img/masters/mob/img3master3@2x-min.jpg 2x
                   "
-                  media="(max-width:767 px)"
+                  media="(max-width:767px)"
                 />
-                <img src="./img/masters/img3master3-min.jpg" alt="master3" />
+
+                <source
+                  srcset="
+                    ./img/masters/tabl/img3tabl.masters3-min.jpg    1x,
+                    ./img/masters/tabl/img3tabl.masters3@2x-min.jpg 2x
+                  "
+                  media="(max-width:1199px)"
+                />
+
+                <img
+                  src="./img/masters/mob/img3master3-min.jpg"
+                  alt="master3"
+                />
               </picture>
               <div class="card-description">
                 <h3 class="card-description__title">John Smith</h3>
@@ -440,52 +530,76 @@
           <h2 class="visually-hidden">gallery</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <picture
-                ><source
+              <picture>
+                <source
                   srcset="
                     ./img/gallery/mob/gallery1-min.jpg    1x,
                     ./img/gallery/mob/gallery1@2x-min.jpg 2x
                   "
-                  media="(max-width: 767px)" />
+                  media="(max-width:767px)" />
+                <source
+                  srcset="
+                    ./img/gallery/tabl/tabl.gallery1-min.jpg    1x,
+                    ./img/gallery/tabl/tabl.gallery1@2x-min.jpg 2x
+                  "
+                  media="(max-width:1199px)" />
                 <img
                   src="./img/gallery/mob/gallery1-min.jpg"
                   alt="барбер стрежет клиента"
               /></picture>
             </li>
             <li class="gallery__item">
-              <picture
-                ><source
+              <picture>
+                <source
                   srcset="
                     ./img/gallery/mob/gallery2-min.jpg    1x,
                     ./img/gallery/mob/gallery2@2x-min.jpg 2x
                   "
-                  media="(max-width: 767px)" />
+                  media="(max-width:767px)" />
+                <source
+                  srcset="
+                    ./img/gallery/tabl/tabl.gallery2-min.jpg    1x,
+                    ./img/gallery/tabl/tabl.gallery2@2x-min.jpg 2x
+                  "
+                  media="(max-width:1199px)" />
                 <img
                   src="./img/gallery/mob/gallery2-min.jpg"
                   alt="барбер стрежет клиента"
               /></picture>
             </li>
             <li class="gallery__item">
-              <picture
-                ><source
+              <picture>
+                <source
                   srcset="
                     ./img/gallery/mob/gallery3-min.jpg    1x,
                     ./img/gallery/mob/gallery3@2x-min.jpg 2x
                   "
-                  media="(max-width: 767px)" />
+                  media="(max-width:767px)" />
+                <source
+                  srcset="
+                    ./img/gallery/tabl/tabl.gallery3-min.jpg    1x,
+                    ./img/gallery/tabl/tabl.gallery3@2x-min.jpg 2x
+                  "
+                  media="(max-width:1199px)" />
                 <img
                   src="./img/gallery/mob/gallery3-min.jpg"
                   alt="барбер стрежет клиента"
               /></picture>
             </li>
             <li class="gallery__item">
-              <picture
-                ><source
+              <picture>
+                <source
                   srcset="
                     ./img/gallery/mob/gallery4-min.jpg    1x,
                     ./img/gallery/mob/gallery4@2x-min.jpg 2x
                   "
-                  media="(max-width: 767px)" />
+                  media="(max-width:767px)" />
+                <source
+                  srcset="
+                    ./img/gallery/tabl/tabl.gallery4-min.jpg    1x,
+                    ./img/gallery/tabl/tabl.gallery4@2x-min.jpg 2x
+                  "
+                  media="(max-width:1199px)" />
                 <img
                   src="./img/gallery/mob/gallery4-min.jpg"
                   alt="барбер стрежет клиента"
@@ -501,26 +615,29 @@
         <div class="container">
           <h2 class="title booking__title">Онлайн-запись</h2>
           <form>
-            <input
-              type="text"
-              name="Имя"
-              placeholder="Имя*"
-              required
-              class="booking__input"
-            />
-            <input
-              type="tel"
-              placeholder="Телефон*"
-              name="Телефон"
-              required
-              class="booking__input"
-            />
-            <textarea
-              name=""
-              id=""
-              class="booking__textarea booking__input"
-              placeholder="сообщение"
-            ></textarea>
+            <div class="booking__form">
+              <input
+                type="text"
+                name="Имя"
+                placeholder="Имя*"
+                required
+                class="booking__input booking__input--width"
+              />
+              <input
+                type="tel"
+                placeholder="Телефон*"
+                name="Телефон"
+                required
+                class="booking__input booking__input--width"
+              />
+              <textarea
+                name=""
+                id=""
+                class="booking__textarea booking__input"
+                placeholder="сообщение"
+              ></textarea>
+            </div>
+
             <button type="submit" class="btn booking__btn">отправить</button>
           </form>
         </div>
@@ -529,42 +646,52 @@
       <!-- CONTACTS -->
 
       <section class="section contacts">
-        <div class="container">
-          <h2 class="title contacts__title">Контакты</h2>
-
-          <address class="contacts__address">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <svg width="24" height="24" class="contacts__icon">
-                  <use href="icons.svg#icon-map-pin"></use>
-                </svg>
-                <a href="" class="contacts__link">
-                  ул. Васильковая, 7А, Киев, 08132</a
-                >
+        <div class="contacts__bg">
+          <div class="container">
+            <h2 class="title contacts__title">Контакты</h2>
+            <ul class="contacts-wrap">
+              <li class="contacts-wrap__item">
+                <div class="contacts__left">
+                  <address class="contacts__address">
+                    <ul class="contacts__list">
+                      <li class="contacts__item">
+                        <svg width="24" height="24" class="contacts__icon">
+                          <use href="icons.svg#icon-map-pin"></use>
+                        </svg>
+                        <a href="" class="contacts__link">
+                          ул. Васильковая, 7А, Киев, 08132</a
+                        >
+                      </li>
+                      <li class="contacts__item">
+                        <svg width="24" height="24" class="contacts__icon">
+                          <use href="icons.svg#icon-phone"></use>
+                        </svg>
+                        <a href="tel:+380441111111" class="contacts__link"
+                          >+38 044 111 11 11</a
+                        >
+                      </li>
+                      <li class="contacts__item">
+                        <svg width="24" height="24" class="contacts__icon">
+                          <use href="icons.svg#icon-mail"></use>
+                        </svg>
+                        <a
+                          href="mailto:barbershop@email.com"
+                          class="contacts__link contacts__link--mail"
+                          >barbershop@email.com</a
+                        >
+                      </li>
+                    </ul>
+                  </address>
+                </div>
               </li>
-              <li class="contacts__item">
-                <svg width="24" height="24" class="contacts__icon">
-                  <use href="icons.svg#icon-phone"></use>
-                </svg>
-                <a href="tel:+380441111111" class="contacts__link"
-                  >+38 044 111 11 11</a
-                >
-              </li>
-              <li class="contacts__item">
-                <svg width="24" height="24" class="contacts__icon">
-                  <use href="icons.svg#icon-mail"></use>
-                </svg>
-                <a
-                  href="mailto:barbershop@email.com"
-                  class="contacts__link contacts__link--mail"
-                  >barbershop@email.com</a
-                >
+              <li class="contacts-wrap__item">
+                <div class="contacts__right">
+                  <p class="pre-title contacts__pre-title">время работы</p>
+                  <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
+                </div>
               </li>
             </ul>
-          </address>
-
-          <p class="pre-title contacts__pre-title">время работы</p>
-          <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
+          </div>
         </div>
       </section>
 

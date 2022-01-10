@@ -1,10 +1,46 @@
 .contacts {
   background-color: #191c26;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    background-image: url(../img/contacts/imgcontacts-bg-min.png);
+    max-width: 490px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/contacts/imgcontacts-bg@2x-min.png);
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    background-image: url(../img/contacts/tabl/tabl.contacts.bg.png);
+    max-width: 770px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/contacts/tabl/tabl.contacts.bg@2x.png);
+    }
+  }
+
   &__title {
     margin-bottom: 40px;
     text-align: center;
     color: var(--title-white-color);
-   
+  }
+  &-wrap {
+    display: flex;
+    align-items: baseline;
+    @media screen and (max-width: 1199px) {
+      flex-direction: row;
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
   &__address {
     margin-bottom: 44px;

@@ -7,10 +7,26 @@
   }
   &__list {
     display: flex;
-    flex-direction: column;
+    @media screen and (max-width: 1199px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
     margin: -15px;
   }
   &__item {
     margin: 15px;
+    @media screen and (max-width: 1199px) {
+      width: calc((100% / 2) - 30px);
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 418px;
+    }
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
   }
 }

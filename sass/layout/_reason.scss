@@ -1,4 +1,12 @@
 .reason {
+  &__container {
+    @media screen and (max-width: 1199px) {
+      width: 500px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 418px;
+    }
+  }
   &__title {
     @media screen and (max-width: 479px) {
       font-size: 30px;

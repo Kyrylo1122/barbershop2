@@ -29,6 +29,10 @@
 
     letter-spacing: 0.2em;
     color: var(--third-text-color);
+    &:focus,
+    &:hover {
+      color: var(--accent-color);
+    }
   }
   &__text {
     display: flex;

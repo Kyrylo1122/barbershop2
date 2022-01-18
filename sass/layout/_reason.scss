@@ -1,4 +1,11 @@
 .reason {
+  &__wrapp {
+    display: flex;
+    flex-direction: row-reverse;
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+    }
+  }
   &__container {
     @media screen and (max-width: 1199px) {
       width: 500px;
@@ -7,6 +14,7 @@
       width: 418px;
     }
   }
+
   &__title {
     @media screen and (max-width: 479px) {
       font-size: 30px;
@@ -16,7 +24,10 @@
   &__post-title {
     font-size: 18px;
     line-height: 1.67;
-    margin-bottom: 44px;
+    margin-bottom: 0px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 44px;
+    }
     @media screen and (max-width: 479px) {
       font-size: 12px;
     }

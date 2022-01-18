@@ -1,85 +1,28 @@
-.contacts {
-  background-color: #191c26;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (max-width: 767px) {
-    background-image: url(../img/contacts/imgcontacts-bg-min.png);
-    max-width: 490px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../img/contacts/imgcontacts-bg@2x-min.png);
-    }
-  }
-  @media screen and (max-width: 1199px) {
-    background-image: url(../img/contacts/tabl/tabl.contacts.bg.png);
-    max-width: 770px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../img/contacts/tabl/tabl.contacts.bg@2x.png);
-    }
-  }
+// .contacts {
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   padding-top: 130px;
+//   padding-bottom: 130px;
+//   min-height: 496px;
+//   @media screen and (max-width: 1199px) {
+//     background-image: url(../img/contacts/tabl/tabl.contacts.bg.png);
 
-  &__title {
-    margin-bottom: 40px;
-    text-align: center;
-    color: var(--title-white-color);
-  }
-  &-wrap {
-    display: flex;
-    align-items: baseline;
-    @media screen and (max-width: 1199px) {
-      flex-direction: row;
-    }
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-    }
-    &__item:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-  &__address {
-    margin-bottom: 44px;
-  }
-  &__icon {
-    margin-right: 20px;
-  }
-  &__link {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    font-style: normal;
+//
 
-    color: var(--second-text-color);
-    @media screen and (max-width: 479px) {
-      font-size: 12px;
-    }
-  }
+//
+//   }
+//
+//
+//
+//
 
-  &__item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  &__pre-title {
-    color: var(--pre-title-white-color);
-  }
-  &__text {
-    font-size: 18px;
-    line-height: 1.66;
-    color: var(--second-text-color);
-  }
-}
-.contacts__link--mail {
-  text-decoration: underline;
-}
-.contacts__pre-title::before {
-  background-color: rgba(157, 164, 189, 0.4);
-}
+//
+//
+//   }
+//
+// }
+
+// .contacts__pre-title

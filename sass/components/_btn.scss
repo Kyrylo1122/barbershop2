@@ -8,6 +8,8 @@
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  background-origin: border-box;
 
   border-color: var(--accent-color);
   background-color: transparent;
@@ -15,7 +17,8 @@
   &:hover {
     color: var(--btn--white-text-color);
     background-color: var(--accent-color);
-    border: var(--accent-color);
+    border: blue;
+    background-origin: border-box;
   }
   @media screen and (max-width: 479px) {
     padding: 10px 25px;

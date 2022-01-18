@@ -9,12 +9,18 @@
     margin-right: 30px;
     &__list {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       margin: -15px;
+      @media screen and (max-width: 1199px) {
+        flex-direction: column;
+      }
     }
     &__item {
       margin: 15px;
-      width: 330px;
+      width: 270px;
+      @media screen and (max-width: 1199px) {
+        width: 330px;
+      }
     }
   }
   &__text {
@@ -26,8 +32,12 @@
     }
   }
   &__title {
-    width: 330px;
-    font-size: 28px;
+    width: 483px;
+    font-size: 42px;
+    @media screen and (max-width: 1199px) {
+      width: 330px;
+      font-size: 28px;
+    }
   }
 }
 .about__post-title {

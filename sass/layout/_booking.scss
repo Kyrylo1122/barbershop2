@@ -1,70 +1,77 @@
-.booking {
-  background-color: #191c26;
-  &__title {
-    text-align: center;
-    color: var(--title-white-color);
-    margin-bottom: 44px;
-    @media screen and (max-width: 479px) {
-      font-size: 32px;
-    }
-  }
-
-  &__input {
-    display: flex;
-
-    background-color: transparent;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    color: #fff;
-    outline: none;
-    @media screen and(max-width:767px) {
-      margin: 22px;
-    }
-    @media screen and(max-width:1199px) {
-      margin: 22px 15px;
-    }
-  }
-  &__textarea {
-    resize: none;
-
-    min-height: 76px;
-  }
-  &__btn {
-    color: var(--btn--white-text-color);
-    display: block;
-    margin-right: auto;
-    margin-top: 44px;
-    @media screen and (max-width: 767px) {
-      margin-left: auto;
-    }
-  }
-  &__form {
-    display: flex;
-    flex-wrap: wrap;
-    @media screen and (max-width: 767px) {
-      margin: -22px;
-    }
-    @media screen and (max-width: 1199px) {
-      margin: -22px -15px;
-    }
-  }
-}
-.booking__input::placeholder {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: rgba(157, 164, 189, 0.4);
-}
-.booking__input--width {
-  @media screen and (min-width: 767px) {
-    width: 330px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
-}
+// .booking-contacts {
+//   background-color: #191c26;
+//   @media screen and (max-width: 1199px) {
+//     padding-top: 0px;
+//     padding-bottom: 0px;
+//   }
+//   &__wrapp {
+//     display: flex;
+//     flex-direction: row;
+//     @media screen and (max-width: 1199px) {
+//       flex-direction: column;
+//     }
+//   }
+//   &__container {
+//     @media screen and (min-width: 1200px) {
+//       margin-left: unset;
+//       margin-right: unset;
+//       width: unset;
+//       padding-left: 0;
+//       padding-right: 0;
+//     }
+//   }
+// }
+// .booking {
+//   margin-left: auto;
+//   margin-right: auto;
+//
+//   &__wrap {
+//     display: flex;
+//     flex-direction: row;
+//     @media screen and (max-width: 767px) {
+//       flex-direction: column;
+//     }
+//   }
+//
+//
+//   &__input {
+//     display: flex;
+//
+//
+//     width: 100%;
+//     border: none;
+//     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+//     color: #fff;
+//
+//     margin: 22px 15px;
+//
+//     @media screen and(max-width:767px) {
+//       margin: 22px;
+//     }
+//   }
+//   &__textarea {
+//     resize: none;
+//     min-height: 76px;
+//   }
+//
+//   &__form {
+//     display: flex;
+//     flex-wrap: wrap;
+//     @media screen and (max-width: 1199px) {
+//       margin: -22px -15px;
+//     }
+//     @media screen and (max-width: 767px) {
+//       margin: -22px;
+//     }
+//   }
+// }
+//
+// .booking__input--width {
+//   width: 265px;
+//   @media screen and (max-width: 1199px) {
+//     width: 330px;
+//   }
+//   @media screen and (max-width: 767px) {
+//     width: 418px;
+//   }
+// }

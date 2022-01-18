@@ -1,0 +1,208 @@
+.book {
+  background-color: #191c26;
+  &__container {
+    @media screen and (max-width: 1199px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__left {
+    padding-right: 30px;
+  }
+  &__right {
+    padding-left: 100px;
+    background-image: url(../img/contacts/desktop/Bgcontacts-bg-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/contacts/desktop/Bgcontacts-bg@2x-min.png);
+    }
+    @media screen and (max-width: 1199px) {
+      background-image: url(../img/contacts/tabl/tabl.contacts.bg.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/contacts/tabl/tabl.contacts.bg@2x.png);
+      }
+      padding-left: 0;
+    }
+    @media screen and (max-width: 767px) {
+      background-image: url(../img/contacts/imgcontacts-bg-min.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/contacts/imgcontacts-bg@2x-min.png);
+      }
+    }
+  }
+  &__wrapp {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+    }
+    &--padding {
+      padding-top: 130px;
+      padding-bottom: 130px;
+      @media screen and (max-width: 1199px) {
+        padding: 100px 39px;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 84px 31px;
+      }
+    }
+    &--half {
+      flex-basis: 50%;
+    }
+  }
+}
+.booking {
+  &__title {
+    text-align: center;
+    color: var(--title-white-color);
+    margin-bottom: 44px;
+    @media screen and (max-width: 479px) {
+      font-size: 32px;
+    }
+  }
+  &__form {
+    max-width: 560px;
+    @media screen and (max-width: 1199px) {
+      max-width: 690px;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 418px;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 44px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  &__input,
+  &__textarea {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    @media screen and (max-width: 767px) {
+      margin-bottom: 44px;
+    }
+    &::placeholder {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: rgba(157, 164, 189, 0.4);
+    }
+  }
+  &__input {
+    width: 250px;
+    @media screen and (max-width: 1199px) {
+      width: 330px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    &--tel {
+      margin-left: 30px;
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  &__textarea {
+    display: block;
+    width: 100%;
+    min-height: 85px;
+    margin-bottom: 44px;
+    resize: none;
+  }
+  &__btn {
+    color: var(--btn--white-text-color);
+    display: block;
+    margin-right: auto;
+    margin-top: 44px;
+    padding: 12px 38px;
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+    }
+  }
+}
+.contacts {
+  &__title {
+    margin-bottom: 40px;
+    color: var(--title-white-color);
+  }
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    @media screen and (max-width: 1199px) {
+      flex-direction: row;
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__address {
+    margin-bottom: 44px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
+    margin-right: 20px;
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    &--mail {
+      text-decoration: underline;
+    }
+
+    color: var(--second-text-color);
+    @media screen and (max-width: 479px) {
+      font-size: 12px;
+    }
+    &:focus,
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+  &__pre-title {
+    color: var(--pre-title-white-color);
+    &::before {
+      background-color: rgba(157, 164, 189, 0.4);
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 1.66;
+    color: var(--second-text-color);
+  }
+}
